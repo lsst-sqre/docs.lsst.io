@@ -1,0 +1,33 @@
+{
+  "name": "docs.lsst.io",
+  "version": "0.1.0",
+  "description": "Documentation index for LSST Data Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsst-sqre/docs.lsst.io.git"
+  },
+  "keywords": [
+    "lsst"
+  ],
+  "author": "Jonathan Sick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lsst-sqre/docs.lsst.io/issues"
+  },
+  "homepage": "https://github.com/lsst-sqre/docs.lsst.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "run-sequence": "^1.1.5"
+  }
+}
