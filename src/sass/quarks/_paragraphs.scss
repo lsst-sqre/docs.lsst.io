@@ -1,0 +1,10 @@
+// paragraphs.scss - Base styling for paragraphs and text spans
+// <p> inherits primarily from html in quarks/base.
+
+em, i {
+  @include acumin-pro-regular-italic;
+}
+
+strong, b {
+  @include acumin-pro-bold;
+}

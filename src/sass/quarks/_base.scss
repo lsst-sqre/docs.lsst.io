@@ -1,10 +1,11 @@
 // base.scss - Lay foundations for the document structure
 // See other quarks for styling individual HTML elements
 
+$base-font-size: 16px;
+
+// line height
 $base-leading: 1.4;
 $tight-leading: 1.2;
-
-$base-font-size: 16px;
 
 
 html {
@@ -21,4 +22,17 @@ html {
 // Establish border-box sizing everywhere; see html {}
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+
+// Establish a vertical rhythm
+// Use margin-bottom everywhere
+// http://csswizardry.com/2012/06/single-direction-margin-declarations/
+$margin-bottom-rhythm: 1.5rem;
+
+h1, h2, h3, h4, h5, h6, 
+ul, ol, dd, 
+p, figure, 
+pre, table, fieldset, hr {
+  margin: 0 0 $margin-bottom-rhythm;
 }
