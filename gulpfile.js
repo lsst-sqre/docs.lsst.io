@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 // var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
@@ -34,6 +35,7 @@ gulp.task('sass', function() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(customPlumber())
     .pipe(sass({includePaths: ['src/bower_components']}))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.reload({stream: true}))
 });
