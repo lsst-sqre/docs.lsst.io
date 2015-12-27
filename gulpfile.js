@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 // var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
@@ -34,8 +35,10 @@ function customPlumber (errTitle) {
 gulp.task('sass', function() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(customPlumber())
+    .pipe(sourcemaps.init())
     .pipe(sass({includePaths: ['src/bower_components']}))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.reload({stream: true}))
 });
