@@ -1,0 +1,22 @@
+{
+  "name": "docs.lsst.io",
+  "description": "Documentation index for LSST Data Management",
+  "main": "index.js",
+  "authors": [
+    "Jonathan Sick"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lsst"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/lsst-sqre/docs.lsst.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+}

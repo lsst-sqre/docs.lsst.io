@@ -33,7 +33,7 @@ function customPlumber (errTitle) {
 gulp.task('sass', function() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(customPlumber())
-    .pipe(sass())
+    .pipe(sass({includePaths: ['src/bower_components']}))
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.reload({stream: true}))
 });

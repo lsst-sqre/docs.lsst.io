@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "bower": "bower"
   },
   "private": true,
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/lsst-sqre/docs.lsst.io#readme",
   "devDependencies": {
+    "bower": "^1.7.1",
     "browser-sync": "^2.10.1",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
