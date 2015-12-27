@@ -1,0 +1,22 @@
+// Typekit definitions
+// for the kit 'docs.lsst.io dev' on Jonathan Sick's account
+
+$acumin-alt-stack: "Avenir Next", "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
+
+@mixin acumin-pro-regular {
+  font-family: "acumin-pro", $acumin-alt-stack;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin acumin-pro-regular-italic {
+  font-family: "acumin-pro", $acumin-alt-stack;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin acumin-pro-bold {
+  font-family: "acumin-pro", $acumin-alt-stack;
+  font-style: normal;
+  font-weight: 700;
+}

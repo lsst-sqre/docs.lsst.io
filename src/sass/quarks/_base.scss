@@ -1,0 +1,24 @@
+// base.scss - Lay foundations for the document structure
+// See other quarks for styling individual HTML elements
+
+$base-leading: 1.4;
+$tight-leading: 1.2;
+
+$base-font-size: 16px;
+
+
+html {
+  @include acumin-pro-regular;
+  // We use pixels for the root font size; rem for components
+  // http://css-tricks.com/rems-ems/
+  font-size: $base-font-size;
+  line-height: $base-leading;
+  // Border-Box sizing FTW
+  // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+  box-sizing: border-box;
+}
+
+// Establish border-box sizing everywhere; see html {}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

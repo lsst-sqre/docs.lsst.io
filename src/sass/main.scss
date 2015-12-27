@@ -1,2 +1,14 @@
 // Styles docs.lsst.io
-@import "normalize";
+//
+// We use Atomic Design:
+//   utilities/ is for global styles and tools
+//   quarks/ set fundamental styles for basic HTML elements
+//   atoms/ are fundamental classes for individual components
+//   molecules/ are classes for components that combine several atoms
+//
+// We use BEM (block__element--modifier) naming for classes
+
+@import "utilities/normalize";
+@import "utilities/typekit";
+
+@import "quarks/base";
