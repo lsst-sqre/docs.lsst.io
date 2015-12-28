@@ -1,0 +1,69 @@
+// headlines.scss - Base styles for Headers
+
+// $r: 1.618;  // golden ratio
+$r: 1.333;  // 4:3 ratio
+
+@mixin h-alpha {
+  font-size: $base-font-size * $r * $r * $r * $r;
+}
+
+@mixin h-beta {
+  font-size: $base-font-size * $r * $r * $r;
+}
+
+@mixin h-gamma {
+  font-size: $base-font-size * $r * $r;
+}
+
+@mixin h-delta {
+  font-size: $base-font-size * $r;
+}
+
+@mixin h-epsilon {
+  font-size: $base-font-size;
+}
+
+@mixin h-zeta {
+  font-size: $base-font-size / $r;
+}
+
+h1 {
+  @include h-alpha;
+  // @include acumin-pro-wide-semibold;
+  @include acumin-pro-semicondensed-light;
+  line-height: $tight-leading;
+}
+
+h2 {
+  @include h-beta;
+  // @include acumin-pro-condensed-light;
+  @include acumin-pro-semicondensed-light;
+  // text-transform: uppercase;
+  line-height: $tight-leading;
+}
+
+h3 {
+  @include h-gamma;
+  @include acumin-pro-wide-normal;
+  line-height: $tight-leading;
+}
+
+h4 {
+  @include h-delta;
+  @include acumin-pro-wide-normal;
+  line-height: $tight-leading;
+}
+
+h5 {
+  @include h-epsilon;
+  @include acumin-pro-wide-semibold;
+  text-transform: uppercase;
+  line-height: $tight-leading;
+}
+
+h6 {
+  @include h-zeta;
+  @include acumin-pro-wide-semibold;
+  text-transform: uppercase;
+  line-height: $tight-leading;
+}

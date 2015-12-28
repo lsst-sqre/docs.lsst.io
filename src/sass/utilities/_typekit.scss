@@ -20,3 +20,33 @@ $acumin-alt-stack: "Avenir Next", "Helvetica Neue", "Helvetica", "Verdana", sans
   font-style: normal;
   font-weight: 700;
 }
+
+@mixin acumin-pro-condensed-light {
+  font-family: "acumin-pro-condensed", $acumin-alt-stack;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin acumin-pro-wide-semibold {
+  font-family: "acumin-pro-wide", $acumin-alt-stack;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin acumin-pro-wide-normal {
+  font-family: "acumin-pro-wide",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin acumin-pro-semicondensed-light {
+  font-family: "acumin-pro-semi-condensed", $acumin-alt-stack;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin acumin-pro-semicondensed-semibold {
+  font-family: "acumin-pro-semi-condensed", $acumin-alt-stack;
+  font-style: normal;
+  font-weight: 600;
+}
