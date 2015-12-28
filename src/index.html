@@ -16,18 +16,94 @@
 </header>
 
 <section>
+  <h1>Software Documentation</h1>
 
-<h1>Software Documentation</h1>
+  <div class="card-deck">
+
+    <section class="card">
+      <h1 class="card__title">Science Pipelines</h1>
+
+      <p>Use LSST's Science Pipelines to process astronomical image data sets with leading algorithms, at scale. Run the pipeline on the command line; extend for any dataset with our Python and C++ API.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">Developer Guide</h1>
+
+      <p>Learn how we develop software at LSST Data Management.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">Firefly</h1>
+
+      <p>Build interactive astronomy visualizations and analysis interface for the web with Firefly.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">Qserv</h1>
+
+      <p>The database built for LSST, based on MySQL.</p>
+    </section>
+
+  </div>
+
+</section>
 
 <section>
-<h1>Science Pipelines</h1>
-<p>Use LSST's Science Pipelines to process astronomical image data sets with leading algorithms, at scale. Built in open-source Python and C++, the Science Pipelines can be extended to support any optical and near-infrared camera.</p>
+  <h1>Technical Notes</h1>
 
-<h1>Developer Guide</h1>
-<p>Learn how to develop software with LSST Data Management.</p>
-</section>
+  <h2>Data Management Technical Notes</h2>
 
-</section>
+  <div class="card-deck">
+    <section class="card">
+      <h1 class="card__title">Porting the stack to OS X El Capitan</h1>
+
+      <p>OS X 10.11 (El Capitan) is not compatible with any version of the LSST software stack, up to and including Summer 2015 due to the new System Integrity Protection (SIP) feature. This technote describes workarounds, and how developers should port existing packages to OS X El Capitan.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">SuperTask and Activator Notes</h1>
+
+      <p>Provisional notes on using the new architecture for command line tasks.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">Description of v1.0 of the Alert Production Simulator</h1>
+
+      <p>This document describes the current state of the Alert Production Simulator, which was written to test the workflow described in LDM-230, revision 1.2 dated Oct 10, 2013.</p>
+
+      <p>The system consists of twenty-five virtual machines simulating over two hundred machines, simulating the workflow required for one thread of processing.</p>
+    </section>
+  </div>
+
+  <h2>SQuaRE Technical Notes</h2>
+
+  <div class="card-deck">
+    <section class="card">
+      <h1 class="card__title">The LSST DM Technical Note Publishing Platform</h1>
+      <p class="card__subtitle">SQR-000</p>
+      <p>Technical notes (hereafter, technotes) are a new documentation medium for LSST Data Management (DM) staff to publish stand-alone documents that are native to the web. Technotes are written in reStructuredText, version controlled on GitHub, built with the same stack as DM’s software documentation, and made universally citeable with digital object identifiers (DOIs) provided through Zenodo.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">Git LFS Architecture Note</h1>
+      <p class="card__subtitle">SQR-001</p>
+      <p>This is a SQuaRE Technical Note describing the architecture of the Git LFS service implementation. For actual documentation on deployment, as well as the source code involved in standing up this service, consult the repositories.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">Binary Science Pipeline Software Distribution</h1>
+      <p class="card__subtitle">SQR-002</p>
+      <p>SQuaRE is investigating a number of methods for distributing binary builds of LSST DM’s science pipeline or “application” software. Initial target platforms are CentOS 6 & 7, with support for OS X planned for as soon as build resources become available.</p>
+    </section>
+
+    <section class="card">
+      <h1 class="card__title">How to publish your proceedings with CoMPAAS</h1>
+      <p class="card__subtitle">SQR-004</p>
+      <p>This is a proposed HOWTO contributed by an AAS/WGAS taskforce describing how might use the CoMPASS workflow to have materials from a conference or workshop published as a volume of the virtual Conference & Meeting Proceedings of the AAS journal, including obtaining DoIs and ADS indexing for citation. It will eventually transition out of this documentation space.</p>
+    </section>
+  </div>
+
+</section
 
 </body>
 

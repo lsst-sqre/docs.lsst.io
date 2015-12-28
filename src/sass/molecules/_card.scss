@@ -1,0 +1,32 @@
+// card.scss - Card flex items
+// Use within a card-deck organism, see organisms/_card-deck.scss
+
+.card-deck {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-stretch;
+  flex-flow: row wrap;
+  border: 1px solid red;
+  margin-bottom: 3em;
+}
+
+
+.card {
+  flex: 1 1 20rem;
+  align-self: top;
+  // width: 50%;
+  padding: 1rem;
+  border: 1px solid DodgerBlue;
+}
+
+.card__title {
+  @include acumin-pro-condensed-light;
+  @include h-gamma;
+  line-height: $tight-leading;
+}
+
+.card__subtitle {
+  @include acumin-pro-wide-normal;
+  line-height: $tight-leading;
+  margin-top: -1rem;
+}
